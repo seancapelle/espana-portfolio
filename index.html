@@ -1,112 +1,113 @@
-</!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>Jonathan Espana</title>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"/> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <link rel="stylesheet" href="style/photoswipe.css">
-    <link rel="stylesheet" href="style/default-skin/default-skin.css">
     <link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Espana</title>
 </head>
 
 <body>
     <script src="script/photoswipe.js"></script>
     <script src="script/photoswipe-ui-default.js"></script>
-    <div class="jumbotron">
-        <h1 class="centered">Jonathan Espana</h1>
-        <h3 class="centered">3D Environment / Prop Artist</h3>
-    </div>
-    <!-- <div class="container margin-left-20"> -->
-    <div class="row">
-        <div class="col-md-2 side-nav">
-            <!-- Buttons -->
-            <div class="button margin-top-20 margin-left-10" id="portfolio-btn">
-                <h3 class="centered margin-bottom-20">Portfolio</h3>
-            </div>
-            <div class="button margin-top-10 margin-left-10" id="resume-btn">
-                <h3 class="centered margin-bottom-20">Resume</h3>
-            </div>
-            <div class="button margin-top-10 margin-bottom-20 margin-left-10" id="contact-btn">
-                <h3 class="centered margin-bottom-20">Contact</h3>
+    <header class="sky-bg">
+        <div class="col-md-12 col-xs-12 nav-bar">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+            <div class="menu">
+                <ul>
+                    <li class="top-nav"><a href="#portfolio"><span><i class="fa fa-picture-o white-text" aria-hidden="true"></i></span> Gallery</a></li>
+                    <li class="top-nav"><a href="#about"><span><i class="fa fa-info-circle white-text" aria-hidden="true"></i></span> About</a></li>
+                    <li class="top-nav"><a href="#contact"><span><i class="fa fa-phone white-text" aria-hidden="true"></i></span> Contact</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col-md-10 padding-left-0">
-            <div class="outer-border padding-15">
-                <div class="inner-border padding-15">
-                    <div class="display padding-15">
-                        <h3 class="centered">CONTENT</h3>
-                        <!-- Portfolio -->
-                        <div id="portfolio-view">
-                            Portfolio
-                            <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-                                <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-                                <div class="pswp__bg"></div>
-                                <!-- Slides wrapper with overflow:hidden. -->
-                                <div class="pswp__scroll-wrap">
-                                    <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-                                    <div class="pswp__container">
-                                        <div class="pswp__item"></div>
-                                        <div class="pswp__item"></div>
-                                        <div class="pswp__item"></div>
-                                    </div>
-                                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                                    <div class="pswp__ui pswp__ui--hidden">
-                                        <div class="pswp__top-bar">
-                                            <!--  Controls are self-explanatory. Order can be changed. -->
-                                            <div class="pswp__counter"></div>
-                                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                                            <button class="pswp__button pswp__button--share" title="Share"></button>
-                                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                                            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                            <!-- element will get class pswp__preloader active when preloader is running -->
-                                            <div class="pswp__preloader">
-                                                <div class="pswp__preloader__icn">
-                                                    <div class="pswp__preloader__cut">
-                                                        <div class="pswp__preloader__donut"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                            <div class="pswp__share-tooltip"></div>
-                                        </div>
-                                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-                                        </button>
-                                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-                                        </button>
-                                        <div class="pswp__caption">
-                                            <div class="pswp__caption__center"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Resume -->
-                        <div id="resume-view">
-                            Resume
-                        </div>
-                        <!-- Contact -->
-                        <div id="contact-view">
-                            Contact
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-12 col-xs-12 top-push">
+            <h1 class="centered white-text title">Jonathan Espana</h1>
+            <h3 class="centered white-text">3D Environment / Prop Artist</h3>
+        </div>
+    </header>
+
+    <!-- Gallery -->
+    <section id="gallery" class="row ">
+        <div class="col-md-12 col-xs-12 sand-color" style="border-top:2px solid white; border-bottom: 2px solid white;">
+            <h1 class="white-text centered title-sm padding-5"><span><i class="fa fa-picture-o" aria-hidden="true"></i></span></h1>
+        </div>
+
+        <div class="col-md-12 col-xs-12 black-color padding-10">
+            
+            <div class="col-md-4 col-xs-3" id="view-1">
+                <!-- APPEND PIC HERE -->
+            </div>
+            
+            <div class="col-md-4 col-xs-3" id="view-2">
+                <!-- APPEND PIC HERE -->
+            </div>
+            
+            <div class="col-md-4 col-xs-3" id="view-3">
+                <!-- APPEND PIC HERE --> 
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-xs-12 padding-10 dk-gray-color">
+            <div class="white-text" style="text-align: center; font-size: 2em; display: block; width: 100%;" id="pic-name">
+                <!-- APPEND NAME HERE -->
+            </div>
+            <div id="left-arrow" style="float: left;">
+                <i class="arrow fa fa-chevron-left margin-left-20 white-text" aria-hidden="true" style="font-size: 2em;"></i>
+            </div>
+            <div id="right-arrow" style="float: right;">
+                <i class="arrow fa fa-chevron-right margin-right-20 white-text" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
         </div>
-    </div>
-    <!-- </div> -->
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="row green-color">
+        <div class="col-md-12 col-xs-12 sand-color" style="border-top: 2px solid white; border-bottom: 2px solid white;">
+            <h1 class="white-text centered title-sm padding-5"><span><i class="fa fa-info-circle" aria-hidden="true"></i></span></h1>
+        </div>
+
+        <div class="col-md-2 col-xs-12">
+            <img src="images/JonathanEspana.png" class="img-border img-size margin-10" alt="Jonathan Espana">
+        </div>
+        <div class="col-md-10 col-xs-12">
+            <div class="margin-10">
+                <h5 class="white-text">Jonathan earned his degree in game art from Full Sail University. It was there that he combined his passion for gaming with his artistic abilities.</h5> 
+                <h5 class="white-text">His software skills include world building in Unreal Engine 4 and Unity, image editing in Photoshop, and other image rendering software such as Maya and Zbrush.</h5>
+            </div>
+            <div class="margin-10">
+            <button type="button" class="arrow btn btn-danger" id="resume-btn">SEE JONATHAN'S RESUME</button>
+
+            </div>
+        </div>
+ 
+
+    
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="blue-color row">
+        <div class="col-md-12 col-xs-12 sand-color" style="border-top: 2px solid white; border-bottom: 2px solid white;">
+            <h1 class="white-text centered title-sm"><i class="fa fa-phone" aria-hidden="true"></i></h1>
+        </div>
+        <div class="col-md-12 col-xs-12">
+            <h4 class="centered white-text">954-732-7517</h4>
+            <h4 class="centered white-text arrow" id="email">Jespana3D@gmail.com</h4>
+        </div>
+
+
+    </section>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="bootstrap.min.js"></script>
     <script type="text/javascript" src="script/app.js"></script>
-
 </body>
 
 </html>
